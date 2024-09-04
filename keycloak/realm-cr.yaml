@@ -1,0 +1,14 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakRealm
+metadata:
+  name: kogito-realm
+  namespace: student-test
+spec:
+  instanceSelector:
+    matchLabels:
+      app: example-keycloak
+  realm:
+    id: kogito
+    realm: kogito
+    displayName: Kogito Realm
+    enabled: true

@@ -1,0 +1,7 @@
+apiVersion: keycloak.org/v1alpha1
+kind: Keycloak
+metadata:
+  name: example-keycloak
+  namespace: student-test
+spec:
+  instances: 1
